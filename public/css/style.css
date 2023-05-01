@@ -93,7 +93,12 @@ h2 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     /* transform: matrix(1, 0, 0, -1, 0, 0);*/
-   
+
+}
+
+/* Annimation button Reserer */
+.button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 a {
@@ -185,13 +190,15 @@ i.fa-solid {
 }
 
 .fa-list-ul,
-.fa-mobile-screen {
+.fa-mobile-screen,
+.fa-store {
     color: #7e7e7e;
 }
 
-.fa-store {
+.button-fonct:hover .fa-store,
+.button-fonct:hover .fa-list-ul,
+.button-fonct:hover .fa-mobile-screen {
     color: #9356DC;
-
 }
 
 .Titre-Rest {
@@ -302,4 +309,12 @@ ul li a {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: white;
+}
+
+.fa-heart:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: border-box;
+    -webkit-text-stroke-width: 0px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }

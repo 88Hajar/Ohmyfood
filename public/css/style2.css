@@ -170,6 +170,10 @@ h2 {
     border-radius: 25px;
 }
 
+.button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  }
+
 .Footer {
     background-color: #353535;
     color: #F7F7F7;
