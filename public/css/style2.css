@@ -28,7 +28,9 @@ nav {
     padding-left: 23px;
     Width: 17.2px;
     Height: 16px;
+    cursor: pointer;
 }
+
 
 .Image {
     height: 275px;
@@ -61,13 +63,20 @@ h1 {
 .fa-heart {
     position: absolute;
     left: 85%;
-    Height: 21px;
     margin-top: -62px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: #F7F7F7;
 }
 
+.fa-heart:hover {
+    background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: border-box;
+    -webkit-text-stroke-width: 0px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
 
 
 p {
