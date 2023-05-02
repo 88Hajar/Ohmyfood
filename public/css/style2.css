@@ -73,9 +73,9 @@ h1 {
     background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     background-clip: border-box;
     -webkit-text-stroke-width: 0px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  cursor: pointer;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
 }
 
 
@@ -86,9 +86,6 @@ p {
     font-size: 15.04px;
     line-height: 17.63px;
     color: #000000;
-    display: flex;
-    align-items: flex-start;
-    text-align: center;
     margin-top: 5px;
 }
 
@@ -136,9 +133,9 @@ h2 {
     flex-grow: 0;
 }
 
-.button-Entrée,
+.button-Entree,
 .button-Plats,
-.button-DESSERTS {
+.button-Desserts {
     margin: 12px 4%;
     padding-left: 15px;
     padding-top: 12px;
@@ -148,7 +145,125 @@ h2 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     display: block;
+
+    opacity: 0;
+    /*Annimation*/
+    animation: fadein linear forwards;
+    -moz-animation: fadein linear forwards;
+    /* Firefox */
+    -webkit-animation: fadein linear forwards;
+    /* Safari et Chrome */
+    -o-animation: fadein linear forwards;
+    /* Opera */
+    animation-duration: 2s;
+
 }
+
+.button-Entree {
+
+    animation-delay: 1s;
+}
+
+.button-Plats {
+
+    animation-delay: 2s;
+}
+
+.button-Desserts {
+    animation-delay: 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.button-Entree:hover .check {
+    display: flex;
+}
+
+.button-Entree:hover b {
+    left: 70%;
+}
+
+.button-Entree:hover p {
+    width: 215px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.button-Plats:hover .check {
+    display: flex;
+}
+
+.button-Plats:hover b {
+    left: 70%;
+}
+
+.button-Plats:hover p {
+    width: 215px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.button-Desserts:hover .check {
+    display: flex;
+}
+
+.button-Desserts:hover b {
+    left: 70%;
+}
+
+.button-Desserts:hover p {
+    width: 215px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 .Entree,
 .Plats,
@@ -181,7 +296,7 @@ h2 {
 
 .button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  }
+}
 
 .Footer {
     background-color: #353535;
@@ -223,4 +338,21 @@ ul li a {
     line-height: 35px;
     color: #F7F7F7;
     margin-left: 0px;
+}
+
+.check {
+    width: 59px;
+    height: 69px;
+    background: #99E2D0;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    left: 85%;
+    margin: -12px -4%;
+    display: none;
+}
+
+.fa-circle-check {
+    color: white;
+    margin: auto;
+
 }
