@@ -299,6 +299,17 @@ ul li a {
     margin-left: 0px;
 }
 
+.contact{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #F7F7F7;
+}
+
 .fa-utensils {
     margin-right: 11px;
 }
@@ -323,3 +334,4 @@ ul li a {
   -webkit-background-clip: text;
   cursor: pointer;
 }
+

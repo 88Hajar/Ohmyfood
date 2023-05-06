@@ -219,51 +219,20 @@ h2 {
     }
 }
 
-.button-Entree:hover .check {
+.Annim:hover .check {
     display: flex;
 }
 
-.button-Entree:hover b {
+.Annim:hover b {
     left: 70%;
 }
 
-.button-Entree:hover p {
+.Annim:hover p {
     width: 215px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-.button-Plats:hover .check {
-    display: flex;
-}
-
-.button-Plats:hover b {
-    left: 70%;
-}
-
-.button-Plats:hover p {
-    width: 215px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.button-Desserts:hover .check {
-    display: flex;
-}
-
-.button-Desserts:hover b {
-    left: 70%;
-}
-
-.button-Desserts:hover p {
-    width: 215px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
 
 .Entree,
 .Plats,
@@ -338,6 +307,16 @@ ul li a {
     line-height: 35px;
     color: #F7F7F7;
     margin-left: 0px;
+}
+.contact{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #F7F7F7;
 }
 
 .check {

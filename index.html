@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fc35d441e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./sass/_buttons.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ohmyfood</title>
 </head>
-
+<div class="loader">
+    <div class="loading"></div>
+</div>
 <body>
+
     <header>
         <nav>
             <img class="Ohmyfood" src="./public/img/ohmyfood.png" alt="ohmyfood">
@@ -63,7 +67,7 @@
                     <h5>Ménilmontant</h5>
                 </article>
 
-                <article>
+                <article onclick="location.href='./restaurants/lanote.html';">
                     <a class="button-nouveau" href="#">Nouveau</a>
                     <img src="./public/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                     <i class="fa-solid fa-heart fa-lg"></i>
@@ -72,7 +76,7 @@
 
                 </article>
 
-                <article>
+                <article onclick="location.href='./restaurants/lafrançaise.html';">
                     <img src="./public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                     <i class="fa-solid fa-heart fa-lg"></i>
                     <h4>À la française</i></h4>
@@ -80,7 +84,7 @@
 
                 </article>
 
-                <article>
+                <article onclick="location.href='./restaurants/ledélice.html';">
                     <img src="./public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                     <i class="fa-solid fa-heart fa-lg"></i>
                     <h4>Le délice des sens</h4>
@@ -97,7 +101,7 @@
             <li> <i class="fa-solid fa-utensils" style="color: #ffffff;"></i><a>Proposer un restaurant</a></li>
             <li> <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i><a>Devenir partenaire</a></li>
             <li> <a>Mentions légales</a></li>
-            <li> <a>Contact</a></li>
+            <li> <a class="contact" href="mailto:contact@ohmyfood.com?subject=HTML link">Contact</a></li>
         </ul>
     </footer>
 
