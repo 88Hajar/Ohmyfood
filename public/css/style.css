@@ -1,6 +1,6 @@
 
 html {
-    width:375px;
+    width:360px;
     background-color: #D2D2D2;
     position: relative;
     margin: auto;
@@ -162,7 +162,7 @@ html {
         display: flex;
         counter-increment: list;
         margin-bottom: 10px;
-        margin-left: 32px;
+        margin-left: 25px;
     }
 
     .button-txt {
