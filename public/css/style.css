@@ -1,12 +1,11 @@
 html {
     width: 375px;
     background-color: #D2D2D2;
-   position: relative;
+    position: relative;
     margin: auto;
 }
 
 body {
-    margin: 0px;
     background: #F7F7F7;
 }
 
@@ -77,22 +76,14 @@ h2 {
     height: 50px;
     text-align: center;
     margin: auto;
-    display: grid;
-    align-items: center;
-    /*text*/
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
+    display: flex;
+
     /*background*/
-    background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     /* Shadow/Button */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    /* transform: matrix(1, 0, 0, -1, 0, 0);*/
+    transform: matrix(1, 0, 0, -1, 0, 0);
 
 }
 
@@ -101,8 +92,19 @@ h2 {
     background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
-a {
-    transform: rotate(0);
+.explorer {
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    transform: scaleX(-1);
+    rotate: 180deg;
+    display: flex;
+    margin: auto;
 }
 
 p {
@@ -153,7 +155,7 @@ p {
     display: flex;
     counter-increment: list;
     margin-bottom: 10px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
 .button-txt {
@@ -170,8 +172,14 @@ p {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     width: 80px;
     height: 29px;
+    left: 67%;
+    position: absolute;
+    display: flex;
+    margin-top: 14px;
+}
+
+.nouveau {
     text-align: center;
-    display: grid;
     align-items: center;
     text-decoration: none;
     font-family: 'Roboto';
@@ -180,10 +188,9 @@ p {
     font-size: 14px;
     line-height: 16.41px;
     color: #008766;
-    left: 67%;
-    position: absolute;
-    
-    margin: 14px;
+    display: flex;
+    margin: auto;
+
 }
 
 i.fa-solid {
@@ -297,7 +304,6 @@ ul li a {
     font-weight: 500;
     font-size: 16px;
     line-height: 35px;
-    margin-left: 0px;
 }
 
 .contact {
