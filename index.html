@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./public/css/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,33 +33,36 @@
             <input type="text" id="Recherche-input" placeholder="Paris, Belleville">
         </form>
         <div class="Reservation">
-            <h1>Réservez le menu qui<br> vous convient</h1>
-            <h2>Découvrez des restaurants d’exception,<br> sélectionnés par nos soins.</h2>
+            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
             <div class="button" onclick="location.href='#Restaurant';">
                 <a class="explorer">Explorer nos restaurants</a>
             </div>
         </div>
 
-        <ul class="directioncolumn">
-            <li>
+        <div class="directioncolumn">
                 <p>Fonctionnement</p>
-            </li>
-            <li class="button-fonct">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <a class="button-txt" href="#">Choissisez un restaurant</a>
+            <div>
+                <ul>
 
-            </li>
-            <li class="button-fonct">
-                <i class="fa-solid fa-list-ul"></i>
-                <a class="button-txt" href="#">Composez votre menu</a>
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <a class="button-txt" href="#">Choissisez un restaurant</a>
 
-            </li>
-            <li class="button-fonct">
-                <i class="fa-solid fa-store"></i>
-                <a class="button-txt" href="#">Dégustez au restaurant</a>
+                    </li>
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <a class="button-txt" href="#">Composez votre menu</a>
 
-            </li>
-        </ul>
+                    </li>
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-store"></i>
+                        <a class="button-txt" href="#">Dégustez au restaurant</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
         <section id="Restaurant">
             <h3 class="Titre-Rest">Restaurants</h3>
             <div class="Liste-Restaurant">
