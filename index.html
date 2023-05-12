@@ -3,35 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./public/css/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fc35d441e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Ohmyfood</title>
 </head>
 
 <body>
-
+    <!--Loader-->
+    <div class="loader">
+        <div class="loading"></div>
+    </div>
     <header>
+        <!--Navbar qui contient le logo du restaurant 'Ohmyfood'-->
         <nav>
             <img class="Ohmyfood" src="./public/img/ohmyfood.png" alt="ohmyfood">
         </nav>
     </header>
     <main>
-        <form id="Recherche">
+        <!--barre de recherche qui permet de saisir le nom de la ville rechrcher-->
+        <form class="Recherche">
             <div id="icon">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
-            <input type="text" id="Recherche-input" placeholder="Paris,Belleville">
+            <input type="text" id="Recherche-input" placeholder="Paris, Belleville">
         </form>
-        <section>
+        <div class="Reservation">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
-            <a class="button buttonMainColor buttonRounded" href="#">Explorer nos restaurants</a>
+            <!--Button qui nous oriente directement vers les différents restaurants-->
+            <div class="button" onclick="location.href='#Restaurant';">
+                <a class="explorer">Explorer nos restaurants</a>
+            </div>
+        </div>
+           <!--partie fonctionnement-->
+        <div class="directioncolumn">
+                <p>Fonctionnement</p>
+            <div>
+                <ul>
+
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <a class="button-txt" href="#">Choissisez un restaurant</a>
+
+                    </li>
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <a class="button-txt" href="#">Composez votre menu</a>
+
+                    </li>
+                    <li class="button-fonct">
+                        <i class="fa-solid fa-store"></i>
+                        <a class="button-txt" href="#">Dégustez au restaurant</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--la partie Restaurants-->
+        <section id="Restaurant">
+            <h3 class="Titre-Rest">Restaurants</h3>
+            <div class="Liste-Restaurant">
+                <article onclick="location.href='./restaurants/palette.html';">
+                    <div class="button-nouveau"><a class="nouveau">Nouveau</a></div>
+                    <img src="./public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gôut">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <h4>La palette du gôut</h4>
+                    <h5>Ménilmontant</h5>
+                </article>
+
+                <article onclick="location.href='./restaurants/lanote.html';">
+                    <div class="button-nouveau"><a class="nouveau">Nouveau</a></div>
+                    <img src="./public/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <h4>La note enchantée</h4>
+                    <h5>Charone</h5>
+
+                </article>
+
+                <article onclick="location.href='./restaurants/lafrançaise.html';">
+                    <img src="./public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <h4>À la française</h4>
+                    <h5>Cité Rouge</h5>
+
+                </article>
+
+                <article onclick="location.href='./restaurants/ledélice.html';">
+                    <img src="./public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <h4>Le délice des sens</h4>
+                    <h5>Folie-Méricourt</h5>
+
+                </article>
+            </div>
         </section>
     </main>
+    <!--Footer-->
+    <footer class="Footer">
+        <h3>ohmyfood</h3>
+        <ul>
+            <li> <i class="fa-solid fa-utensils" style="color: #ffffff;"></i><a>Proposer un restaurant</a></li>
+            <li> <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i><a>Devenir partenaire</a></li>
+            <li> <a>Mentions légales</a></li>
+            <li> <a class="contact" href="mailto:contact@ohmyfood.com?subject=Contacter%20OhMyfood">Contact</a></li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>
