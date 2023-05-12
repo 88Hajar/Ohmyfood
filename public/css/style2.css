@@ -355,9 +355,26 @@ ul li a {
 }
 
 /****************************************************/
+/******************Tablette **************************/
+/****************************************************/
+@media screen and (min-width:768) and (max-width:834px) {
+
+    /***Prix***/
+    b {
+        left: 73%;
+    }
+    .Annim:hover b {
+        left: 65%;
+    }
+    .check {
+        inset-inline-end: 23%;
+    }
+}
+
+/****************************************************/
 /******************Desktop **************************/
 /****************************************************/
-@media screen and (min-width:768px) {
+@media screen and (min-width:835px) {
 /***image***/
     .Image {
         height: 956.14px;
@@ -413,7 +430,7 @@ ul li a {
     }
     /***Check***/
     .check {
-        inset-inline-end: 23%;
+        inset-inline-end: 22%;
     }
 
     .button-Entree,
