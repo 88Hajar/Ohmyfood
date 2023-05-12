@@ -12,7 +12,7 @@ body {
     margin: 0px;
     background: #F7F7F7;
 }
-
+/***Navbar***/
 nav {
     background: white;
     height: 63px;
@@ -22,14 +22,14 @@ nav {
     margin: auto;
 }
 
-
+/***Logo Restaurant***/
 .Ohmyfood {
     Width: 197px;
     Height: 36px;
     margin: auto;
     display: flex;
 }
-
+/***Fleche pour retourner vers page d'accueil***/
 .fa-arrow-left {
     top: 50%;
     left: 23px;
@@ -39,7 +39,7 @@ nav {
     cursor: pointer;
 }
 
-
+/***Image***/
 .Image {
     height: 275px;
     width: 100%;
@@ -67,7 +67,7 @@ h1 {
     margin-left: 17px;
     margin-top: 32px;
 }
-
+/***les coeurs sans annimation***/
 .fa-heart {
     position: absolute;
     left: 85%;
@@ -76,7 +76,7 @@ h1 {
     -webkit-text-stroke-color: black;
     color: #F7F7F7;
 }
-
+/***les coeurs avec annimation***/
 .fa-heart:hover {
     background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     background-clip: border-box;
@@ -140,7 +140,7 @@ h2 {
     align-self: stretch;
     flex-grow: 0;
 }
-
+/***Menus***/
 .button-Entree,
 .button-Plats,
 .button-Desserts {
@@ -166,7 +166,7 @@ h2 {
     animation-duration: 2s;
 
 }
-
+/***Affichage progressive des menus***/
 .button-Entree {
 
     animation-delay: 1s;
@@ -226,7 +226,7 @@ h2 {
         opacity: 1;
     }
 }
-
+/***Check***/
 .Annim:hover .check {
     display: flex;
 }
@@ -234,7 +234,7 @@ h2 {
 .Annim:hover b {
     left: 70%;
 }
-
+/***Annimation les 3 points***/
 .Annim:hover p {
     width: 215px;
     overflow: hidden;
@@ -247,7 +247,7 @@ h2 {
 .Desserts {
     margin-bottom: 40px;
 }
-
+/***button Commander***/
 .button {
     
         width: 218px;
@@ -264,12 +264,12 @@ h2 {
 
     }
     
-    /* Annimation button Reserer */
+    /* Annimation button Commander */
     .button:hover {
         background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
         cursor: pointer;
     }
-    
+    /*** text button commander***/
     .commander {
         align-items: center;
         text-decoration: none;
@@ -284,13 +284,7 @@ h2 {
         margin: auto;
     }
 
-/* Annimation button Commander */
-.button:hover {
-    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    cursor: pointer;
-}
-
-
+/***Footer***/
 .Footer {
     background-color: #353535;
     color: #F7F7F7;
@@ -364,7 +358,7 @@ ul li a {
 /******************Desktop **************************/
 /****************************************************/
 @media screen and (min-width:768px) {
-
+/***image***/
     .Image {
         height: 956.14px;
         width: 100%;
@@ -406,18 +400,18 @@ ul li a {
         position: relative;
         left: 24px;
     }
-
+    /***Menus***/
     .Entree,
     .Plats,
     .Desserts {
         padding: 30px;
         margin-bottom: 0px;
     }
-
+    /***Prix***/
     b {
         left: 75%;
     }
-
+    /***Check***/
     .check {
         inset-inline-end: 23%;
     }
@@ -440,7 +434,7 @@ ul li a {
     .p1 {
         margin-left: 13%;
     }
-
+     /***Footer***/
     .Footer {
         display: flex;
         justify-content: flex-end;

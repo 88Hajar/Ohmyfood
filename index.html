@@ -17,15 +17,18 @@
 </head>
 
 <body>
+    <!--Loader-->
     <div class="loader">
         <div class="loading"></div>
     </div>
     <header>
+        <!--Navbar qui contient le logo du restaurant 'Ohmyfood'-->
         <nav>
             <img class="Ohmyfood" src="./public/img/ohmyfood.png" alt="ohmyfood">
         </nav>
     </header>
     <main>
+        <!--barre de recherche qui permet de saisir le nom de la ville rechrcher-->
         <form class="Recherche">
             <div id="icon">
                 <i class="fa-solid fa-location-dot"></i>
@@ -35,11 +38,12 @@
         <div class="Reservation">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
+            <!--Button qui nous oriente directement vers les différents restaurants-->
             <div class="button" onclick="location.href='#Restaurant';">
                 <a class="explorer">Explorer nos restaurants</a>
             </div>
         </div>
-
+           <!--partie fonctionnement-->
         <div class="directioncolumn">
                 <p>Fonctionnement</p>
             <div>
@@ -63,6 +67,7 @@
                 </ul>
             </div>
         </div>
+        <!--la partie Restaurants-->
         <section id="Restaurant">
             <h3 class="Titre-Rest">Restaurants</h3>
             <div class="Liste-Restaurant">

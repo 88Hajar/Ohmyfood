@@ -11,12 +11,12 @@ body {
     margin: 0px;
     background: #F7F7F7;
 }
-
+/***Navbar***/
 nav {
     background: white;
     height: 63px;
 }
-
+/***Logo Restaurant***/
 .Ohmyfood {
     padding-top: 16px;
     padding-bottom: 5px;
@@ -25,7 +25,7 @@ nav {
     margin: auto;
     display: flex;
 }
-
+/***Barre de recherche de ville***/
 .Recherche {
     height: 50px;
     background-color: #EAEAEA;
@@ -94,7 +94,7 @@ h2 {
 
 }
 
-/* Annimation button Reserer */
+/* Annimation button explorer */
 .button:hover {
     background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     cursor: pointer;
@@ -122,7 +122,7 @@ p {
     line-height: 28px;
     margin-left: 5%;
 }
-
+/***Affichage des button fonctionnement***/
 .directioncolumn {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ p {
     height: 440px;
     padding-bottom: 68px;
 }
-
+/***Numerotation des buttons fonctionnement  1 2 3 ***/
 .button-fonct:before {
     font-family: 'Roboto';
     font-style: normal;
@@ -173,7 +173,7 @@ p {
     font-size: 16px;
     color: #000000;
 }
-
+/***Nouveau***/
 .button-nouveau {
     background: #99E2D0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -184,7 +184,7 @@ p {
     display: flex;
     margin-top: 14px;
 }
-
+/***Nouveau text***/
 .nouveau {
     text-align: center;
     align-items: center;
@@ -214,7 +214,7 @@ i.fa-solid {
 .button-fonct:hover {
     cursor: pointer;
 }
-
+/***Annimation des icones des buttons fontionnement***/
 .button-fonct:hover .fa-store,
 .button-fonct:hover .fa-list-ul,
 .button-fonct:hover .fa-mobile-screen {
@@ -234,7 +234,7 @@ i.fa-solid {
 #Restaurant {
     margin-top: 54px;
 }
-
+/***Affichage des Restaurants en column***/
 .Liste-Restaurant {
     flex-flow: column;
     justify-content: space-between;
@@ -242,7 +242,7 @@ i.fa-solid {
     height: fit-content;
 
 }
-
+/***Article Restaurant***/
 .Liste-Restaurant article {
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 0px 7px 0px #0000002e;
@@ -255,14 +255,14 @@ i.fa-solid {
     margin-top: 10px;
     position: relative;
 }
-
+/*** Image Article Restaurant***/
 .Liste-Restaurant article img {
     object-fit: cover;
     width: 100%;
     height: calc(100% - 30%);
     border-radius: 25px 25px 0px 0px;
 }
-
+/***Titre Article Restaurant***/
 .Liste-Restaurant article h4 {
     font-weight: bold;
     font-family: 'Roboto';
@@ -274,7 +274,7 @@ i.fa-solid {
     margin-left: 20px;
     color: #000000;
 }
-
+/***Text Article Restaurant***/
 .Liste-Restaurant article h5 {
     font-family: 'Roboto';
     font-style: normal;
@@ -284,7 +284,7 @@ i.fa-solid {
     margin-left: 20px;
     color: #000000;
 }
-
+/***Footer***/
 .Footer {
     background-color: #353535;
     color: #F7F7F7;
@@ -333,14 +333,14 @@ ul li a {
     margin-right: 8px;
 
 }
-
+/***Coeurs***/
 .fa-heart {
     margin-left: 88%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: white;
 }
-
+/***Annimation Coeurs***/
 .fa-heart:hover {
     background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     background-clip: border-box;
@@ -362,7 +362,7 @@ ul li a {
     .directioncolumn {
         height: 228.38px;
     }
-
+    /***Affichage button fonctionnemt***/
     .button-fonct {
         width: 24%;
         height: 72.38px;
@@ -382,7 +382,7 @@ ul li a {
         justify-content: center;
         display: flex;
     }
-
+    /***Affichage des restaurants 2 par 2***/
     .Liste-Restaurant {
         flex-flow: row wrap;
         display: flex;
@@ -391,7 +391,7 @@ ul li a {
     .Liste-Restaurant article {
         width: 40%;
     }
-
+    /***Footer***/
     .Footer {
         display: flex;
         justify-content: flex-end;
