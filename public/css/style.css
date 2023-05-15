@@ -102,6 +102,10 @@ h2 {
     background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     cursor: pointer;
 }
+.button:active {
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    cursor: pointer;
+}
 
 .explorer {
     align-items: center;
@@ -221,11 +225,19 @@ i.fa-solid {
 .button-fonct:hover {
     cursor: pointer;
 }
+.button-fonct:active {
+    cursor: pointer;
+}
 
 /***Annimation des icones des buttons fontionnement***/
 .button-fonct:hover .fa-store,
 .button-fonct:hover .fa-list-ul,
 .button-fonct:hover .fa-mobile-screen {
+    color: #9356DC;
+}
+.button-fonct:active .fa-store,
+.button-fonct:active .fa-list-ul,
+.button-fonct:active .fa-mobile-screen {
     color: #9356DC;
 }
 
@@ -335,7 +347,16 @@ i.fa-solid {
     transition: linear 400ms;
 }
 
-
+.fa-heart:active {
+    position: relative;
+    background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: linear 400ms;
+}
 
 
 /*.fa-heart:active {

@@ -90,7 +90,15 @@ h1 {
     cursor: pointer;
     transition: linear 400ms;
 }
-
+.fa-heart:active {
+    background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: border-box;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: linear 400ms;
+}
 
 p {
     font-family: 'Roboto';
@@ -188,6 +196,9 @@ h2 {
 .Annim:hover>.text-check {
     flex: 75%;
 }
+.Annim:active>.text-check {
+    flex: 75%;
+}
 
 .inged {
     text-overflow: ellipsis;
@@ -213,14 +224,20 @@ h2 {
 
 }
 
-.Annim:hover>.check {
+.Annim:hover > .check {
     flex: 10%;
     transform: translateX(0px);
     background-color: #99e2d0;
     cursor: pointer;
     color: #f6f6f6;
 }
-
+.Annim:active > .check {
+    flex: 10%;
+    transform: translateX(0px);
+    background-color: #99e2d0;
+    cursor: pointer;
+    color: #f6f6f6;
+}
 
 .Annim {
     display: flex;
@@ -249,6 +266,11 @@ h2 {
 /*****Annimation text ...****/
 
 .Annim:hover a, .Annim:hover .inged {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+}
+.Annim:active a, .Annim:active .inged {
     text-overflow: ellipsis;
     overflow: hidden;
     width: 70%;
@@ -348,6 +370,10 @@ h2 {
 
 /* Annimation button Commander */
 .button:hover {
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    cursor: pointer;
+}
+.button:active {
     background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     cursor: pointer;
 }
