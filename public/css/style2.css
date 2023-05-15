@@ -192,7 +192,6 @@ h2 {
 .inged {
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 60%;
 }
 
 .check {
@@ -245,15 +244,14 @@ h2 {
 .Annim a {
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 60%;
 }
 
 /*****Annimation text ...****/
 
-.Annim:hover a .Annim:hover b {
+.Annim:hover a, .Annim:hover .inged {
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 60%;
+    width: 70%;
 }
 
 /***Affichage progressive des menus***/
