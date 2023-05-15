@@ -12,6 +12,7 @@ body {
     margin: 0px;
     background: #F7F7F7;
 }
+
 /***Navbar***/
 nav {
     background: white;
@@ -29,6 +30,7 @@ nav {
     margin: auto;
     display: flex;
 }
+
 /***Fleche pour retourner vers page d'accueil***/
 .fa-arrow-left {
     top: 50%;
@@ -67,6 +69,7 @@ h1 {
     margin-left: 17px;
     margin-top: 32px;
 }
+
 /***les coeurs sans annimation***/
 .fa-heart {
     position: absolute;
@@ -76,6 +79,7 @@ h1 {
     -webkit-text-stroke-color: black;
     color: #F7F7F7;
 }
+
 /***les coeurs avec annimation***/
 .fa-heart:hover {
     background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -84,6 +88,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     cursor: pointer;
+    transition: linear 400ms;
 }
 
 
@@ -113,6 +118,8 @@ p {
     margin-left: 4%;
 }
 
+
+
 a {
     font-family: 'Roboto';
     font-style: normal;
@@ -123,10 +130,7 @@ a {
     text-decoration: none;
 }
 
-b {
-    position: absolute;
-    left: 85%;
-}
+
 
 h2 {
     font-family: 'Roboto';
@@ -140,6 +144,7 @@ h2 {
     align-self: stretch;
     flex-grow: 0;
 }
+
 /***Menus***/
 .button-Entree,
 .button-Plats,
@@ -166,6 +171,91 @@ h2 {
     animation-duration: 2s;
 
 }
+
+.text-check {
+    display: flex;
+    flex: 100%;
+    white-space: nowrap;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 700ms;
+
+}
+
+/**Annimation Check***/
+
+.Annim:hover>.text-check {
+    flex: 75%;
+}
+
+.inged {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 60%;
+}
+
+.check {
+    flex: 0%;
+    color: #f6f6f6;
+    background-color: #99e2d0;
+    font-size: x-large;
+    text-align: center;
+    height: 2.1em;
+    line-height: 2.8em;
+    white-space: nowrap;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    transform: translateX(100px);
+    cursor: pointer;
+    transition: all 700ms;
+    margin: -12px auto;
+    height: 69px;
+
+}
+
+.Annim:hover>.check {
+    flex: 10%;
+    transform: translateX(0px);
+    background-color: #99e2d0;
+    cursor: pointer;
+    color: #f6f6f6;
+}
+
+
+.Annim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 2000ms;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Annim p {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.Annim a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 60%;
+}
+
+/*****Annimation text ...****/
+
+.Annim:hover a .Annim:hover b {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 60%;
+}
+
 /***Affichage progressive des menus***/
 .button-Entree {
 
@@ -226,20 +316,13 @@ h2 {
         opacity: 1;
     }
 }
-/***Check***/
-.Annim:hover .check {
-    display: flex;
-}
 
-.Annim:hover b {
-    left: 70%;
-}
-/***Annimation les 3 points***/
-.Annim:hover p {
-    width: 215px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
+/***Check***/
+
+.fa-circle-check {
+    color: white;
+    margin: auto;
 }
 
 .Entree,
@@ -247,42 +330,46 @@ h2 {
 .Desserts {
     margin-bottom: 40px;
 }
+
 /***button Commander***/
 .button {
-    
-        width: 218px;
-        height: 50px;
-        text-align: center;
-        margin: auto;
-        display: flex;
-        /*background*/
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-        /* Shadow/Button */
-        box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
-        transform: matrix(1, 0, 0, -1, 0, 0);
 
-    }
-    
-    /* Annimation button Commander */
-    .button:hover {
-        background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-        cursor: pointer;
-    }
-    /*** text button commander***/
-    .commander {
-        align-items: center;
-        text-decoration: none;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: white;
-        transform: scaleY(-1);
-        display: flex;
-        margin: auto;
-    }
+    width: 218px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    /*background*/
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    /* Shadow/Button */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+/* Annimation button Commander */
+.button:hover {
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    cursor: pointer;
+}
+
+/*** text button commander***/
+.commander {
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    transform: scaleY(-1);
+    display: flex;
+    margin: auto;
+}
+
+
 
 /***Footer***/
 .Footer {
@@ -338,44 +425,13 @@ ul li a {
     color: #F7F7F7;
 }
 
-.check {
-    width: 59px;
-    height: 69px;
-    background: #99E2D0;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    inset-inline-end: 8%;
-    margin: -12px -4%;
-    display: none;
-}
-
-.fa-circle-check {
-    color: white;
-    margin: auto;
-}
-
-/****************************************************/
-/******************Tablette **************************/
-/****************************************************/
-@media screen and (min-width:768) and (max-width:834px) {
-
-    /***Prix***/
-    b {
-        left: 73%;
-    }
-    .Annim:hover b {
-        left: 65%;
-    }
-    .check {
-        inset-inline-end: 23%;
-    }
-}
 
 /****************************************************/
 /******************Desktop **************************/
 /****************************************************/
 @media screen and (min-width:835px) {
-/***image***/
+
+    /***image***/
     .Image {
         height: 956.14px;
         width: 100%;
@@ -417,6 +473,7 @@ ul li a {
         position: relative;
         left: 24px;
     }
+
     /***Menus***/
     .Entree,
     .Plats,
@@ -424,14 +481,7 @@ ul li a {
         padding: 30px;
         margin-bottom: 0px;
     }
-    /***Prix***/
-    b {
-        left: 75%;
-    }
-    /***Check***/
-    .check {
-        inset-inline-end: 22%;
-    }
+
 
     .button-Entree,
     .button-Plats,
@@ -439,19 +489,11 @@ ul li a {
         margin: 12px 12%;
     }
 
-    .Annim:hover b {
-        left: 68%;
-    }
-
-    .Annim:hover p {
-        width: auto;
-
-    }
-
     .p1 {
         margin-left: 13%;
     }
-     /***Footer***/
+
+    /***Footer***/
     .Footer {
         display: flex;
         justify-content: flex-end;
@@ -474,6 +516,6 @@ ul li a {
     .Footer ul {
         gap: 25px;
         display: flex;
-        padding-top:48px;
+        padding-top: 48px;
     }
 }
